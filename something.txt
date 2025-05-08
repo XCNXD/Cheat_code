@@ -1,0 +1,1 @@
+source /home/kali/.local/share/pipx/venvs/scrapy/bin/activate
