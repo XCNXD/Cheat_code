@@ -1,1 +1,2 @@
-ssh -L 9898:127.0.0.1:9898 user@10.10.10.10
+export PATH=~/fakepath:$PATH
+ssh -L 9898:127.0.0.1:9898 user@10.10.10.10   //  use 127.0.0.1:9898 to connect
