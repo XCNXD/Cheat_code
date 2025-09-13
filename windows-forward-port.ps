@@ -1,0 +1,2 @@
+New-NetFirewallRule -DisplayName "rev-4444" -Direction Inbound -Action Allow -Protocol TCP -LocalPort 4444
+netsh interface portproxy add v4tov4 listenaddress=192.168.68.101 listenport=4444 connectaddress=192.168.48.132 connectport=4444
